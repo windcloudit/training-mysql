@@ -1,6 +1,6 @@
 /*Create table provinces*/
 CREATE TABLE IF NOT EXISTS `provinces` (
-       `id` int NOT NULL AUTO_INCREMENT PRIMARY KEY,
+       `id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY,
        `code` char(10) unique,
        `country_code` char(10),
        `group` smallint,
