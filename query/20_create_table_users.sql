@@ -56,3 +56,6 @@ INSERT INTO `users` (`name`, `gender`, `email`, `birthday`, `phone`, `province_i
 INSERT INTO `users` (`name`, `gender`, `email`, `birthday`, `phone`, `province_id`) VALUES('Nguyễn Dzoãn Cẩm Vân', 2, 'nguyendzoancamvan@gmail.com', '1981-01-01', '0932707345', 39);
 INSERT INTO `users` (`name`, `gender`, `email`, `birthday`, `phone`, `province_id`) VALUES('Nguyễn Thị Ánh Viên', 2, 'nguyenthianhvien@gmail.com', '1980-01-03', '0932707346', 40);
 INSERT INTO `users` (`name`, `gender`, `email`, `birthday`, `phone`, `province_id`) VALUES('Bùi Nguyễn Diễm Phúc', 2, 'buinguyendiemphuc@gmail.com', '1979-01-03', '0932707347', 41);
+INSERT INTO `users` (`name`, `gender`, `email`, `birthday`, `phone`, `province_id`) VALUES('Bùi Anh Tuấn', 1, 'buianhtuan@gmail.com', '1991-01-03', '0932707348', 1);
+INSERT INTO `users` (`name`, `gender`, `email`, `birthday`, `phone`, `province_id`) VALUES('Bùi Hải Yến', 2, 'buihaiyen@gmail.com', '1996-01-03', '0932707349', 1);
+INSERT INTO `users` (`name`, `gender`, `email`, `birthday`, `phone`, `province_id`) VALUES('Ưng Hoàng Phúc', 1, 'unghoangphuc@gmail.com', '1995-01-03', '0932707350', 1);
