@@ -14,15 +14,22 @@
 
 #### Select join 2 bản   
 1. Lấy tất cả users có địa chỉ HCM
-   SELECT * FROM users join provinces p on users.province_id = p.id where p.code ='HCM'
+   SELECT users.id, users.name,p.name, p.code
+   FROM users join provinces p on users.province_id = p.id
+   where p.code ='HCM';
    
 2. Lấy User.id, user name, email, và tình thành
-   SELECT users.id, users.name, email,code,p.name FROM users join provinces p
-   on users.province_id = p.id
+   SELECT users.id, users.name, email, code,p.name
+   FROM users join provinces p on users.province_id = p.id;
    
 3. Hiên thị order id, order date, tinh thanh, tên sản phẩm, số lượng, thành tiền (số lượng * price) bằng user ID.
-   SELECT users.id, o.id, o.created_at, p.name, p2.quantity, p2.price, (p2.quantity*p2.price) as Anount
-   FROM users join orders o join provinces p join products p2
+
+SELECT orders.id, orders.document_date, provinces.name, products.name,
+order_details.quality, products.price, (order_details.quality*products.price) AS Amount
+FROM orders
+JOIN provinces ON orders.province_id = provinces.id
+JOIN order_details ON orders.id = order_details.order_id
+JOIN products ON order_details.product_id = products.id
 
 
 #### Insert record mới
